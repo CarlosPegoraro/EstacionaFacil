@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::resource('/login', LoginController::class);
+Route::post('/login/login', [LoginController::class, "login"])->name('login.login');
