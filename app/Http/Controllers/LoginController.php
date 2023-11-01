@@ -16,7 +16,7 @@ class LoginController extends Controller
         return view('login.index')->with("successMessage", $message);
     }
 
-    public function login(Request $request) {
+    public function login(LoginRequest $request) {
         $data = DB::table('users')->where('email', $request->email)->first();
         if (isNull($data) || $data->password != $request->password) {
             return to_route('login.index')->with("sucessMessage", "Dados inválidos");
