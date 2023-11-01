@@ -31,8 +31,9 @@ O Estáciona Fácil é mais do que um aplicativo; é uma solução inovadora des
 ![laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![SQLITE](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![BOOTSTRAP](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-> Licença
+
+
+### Licença
 Este repositório é protegido por direitos autorais Favor consultar o arquivo LICENSE para detalhes.
 
 > Uso
