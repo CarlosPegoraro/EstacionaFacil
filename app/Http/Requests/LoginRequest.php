@@ -22,19 +22,18 @@ class LoginRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => [
+            'user' => [
                 'required',
-                'min:5'
+                'min:4'
             ],
             'email' => [
-                // Ver no chat gpt **
+                'email',
                 function () : string {
-                    if (route('a') === '/login/create') {
+                    if (request()->is('login/create')) {
                         return "required";
-                        
                     }
-                },
-                'email'
+                    return "";
+                }
             ],
             'password' => [
                 'required',
@@ -45,12 +44,12 @@ class LoginRequest extends FormRequest
 
     public function messages(): array {
         return [
-          "name.required" => "O campo nome tem que ser preenchido",
-          "name.min" => "O campo nome tem que ter ao menos :min caracteres",
+          "user.required" => "O campo nome tem que ser preenchido",
+          "user.min" => "O campo nome tem que ter ao menos :min caracteres",
           "email.required" => "O campo email deve ser preenchido",
           "email.email" => "O campo deve ser um email valido",
           "password.required" => "O campo senha deve ser preenchido",
-          "password.min" => "O minimo de caracteres deve ser :min"
+          "password.min" => "A senha deve conter ao menos :min caracteres"
         ];
       }
 }
