@@ -12,10 +12,6 @@
 <body>
     <div class="container justify-content-center align-items-center flex-column p-5" style="max-height: 100vh;">
 
-        <h1 class="fs-1 fw-bold mb-5">
-            {{ $title }}
-        </h1>
-
         @isset($successMessage)
             <div class="alert alert-success">
                 {{ $successMessage }}
