@@ -1,4 +1,4 @@
-<p align="center"><img url="https://github.com/CarlosPegoraro/EstacionaFacil/assets/102663575/7398ab77-9a34-4064-86e0-93e68d3aed5c"/></p>
+<p align="center">[!logo](https://github.com/CarlosPegoraro/EstacionaFacil/assets/102663575/7398ab77-9a34-4064-86e0-93e68d3aed5c)</p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
