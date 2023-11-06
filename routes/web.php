@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,5 @@ Route::get('/', function () {
 
 Route::resource('/login', LoginController::class);
 Route::post('/login/login', [LoginController::class, "login"])->name('login.login');
+
+Route::resource('/home', HomeController::class);

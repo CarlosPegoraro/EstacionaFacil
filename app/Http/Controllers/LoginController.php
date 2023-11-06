@@ -18,11 +18,10 @@ class LoginController extends Controller
 
     public function login(LoginRequest $request) {
         $data = DB::table('users')->where('email', $request->email)->first();
-        if (isNull($data) || $data->password != $request->password) {
+        if ($data === null || $data->password != $request->password ) {
             return to_route('login.index')->with("sucessMessage", "Dados inválidos");
         }
-
-        return view('home.index');
+        return to_route('home.index');
     }
 
     public function create() {
