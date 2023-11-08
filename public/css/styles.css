@@ -20,9 +20,7 @@
     max-width: 35vw !important;
 }
 
-#email,
-#password,
-#user {
+input {
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 21px !important;
     height: 7px !important;
@@ -31,12 +29,10 @@
     font-size: small;
 }
 
-#email:focus,
-#password:focus,
-#user:focus {
-    border-color: var(--main-color);
-    box-shadow: 0 0 2px 1px var(--main-color);
-    outline: none;
+input:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: 0 0 2px 1px var(--main-color) !important;
+    outline: none !important;
 }
 
 .link {
