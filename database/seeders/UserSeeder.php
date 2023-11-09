@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -10,21 +12,27 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
-            "name" => "kadu",
+        User::create([
+            "user" => "kadu",
             "email" => "kadu@gmail.com",
             "password" => "senha123456",
         ]);
 
-        User::factory()->create([
-            "name" => "guibio",
+        User::create([
+            "user" => "guibio",
             "email" => "guibio@gmail.com",
             "password" => "senha123456",
         ]);
 
-        User::factory()->create([
-            "name" => "pavas",
+        User::create([
+            "user" => "pavas",
             "email" => "pavas@gmail.com",
+            "password" => "senha123456",
+        ]);
+
+        User::create([
+            "user" => "kauan",
+            "email" => "kauan@gmail.com",
             "password" => "senha123456",
         ]);
     }

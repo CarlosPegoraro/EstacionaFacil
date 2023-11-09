@@ -9,5 +9,5 @@ class ParkingLot extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['address', 'date', 'interval', 'value'];
+    protected $fillable = ['address', 'date', 'interval', 'value',  'place', 'coordenates'];
 }

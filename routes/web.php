@@ -23,4 +23,3 @@ Route::resource('/login', LoginController::class);
 Route::post('/login/login', [LoginController::class, "login"])->name('login.login');
 
 Route::resource('/home', HomeController::class);
-// index/create/store/edit/update/destroy/show

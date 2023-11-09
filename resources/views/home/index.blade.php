@@ -7,7 +7,13 @@
     </div>
     <h1 class="fs-4 text-secondary fw-bold mt-4 line">Suas Vagas</h1>
     <div class="row mt-3">
-        <x-parkingcard />
+        @foreach ($parkingLotList as $parkingLot)
+            <x-parkingcard :address="$parkingLot->address"
+                :date="$parkingLot->date"
+                :coordenate="$parkingLot->coordenate"
+                :place="$parkingLot->place"
+                :interval="$parkingLot->interval"/>
+        @endforeach
     </div>
 </x-layout>
 

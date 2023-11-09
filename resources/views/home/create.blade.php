@@ -11,9 +11,11 @@
                 <input class="form-control" list="placeList" id="address" name="address"
                     placeholder="Selecione um lugar">
                 <datalist id="placeList">
-                    <option value="Shopping Abc">
-                    <option value="Shopping Atrium">
-                    <option value="Shopping Plaza">
+                    @foreach ($placeList as $place)
+                        <option value="{{ $place->address }}">{{ $place->name }}</option>
+                        <input type="text" hidden id="coordenates" name="coordenates" value="{{ $place->coordenates }}">
+                        <input type="text" hidden id="place" name="place" value="{{ $place->name }}">
+                    @endforeach
                 </datalist>
             </div>
             <div class="col-12 col-sm-4">

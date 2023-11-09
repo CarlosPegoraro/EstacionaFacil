@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('parking_lots', function (Blueprint $table) {
             $table->id();
             $table->date('date');
-            $table->string('interval');
             $table->string('address', 155);
+            $table->string('place', 155);
+            $table->string('coordenates', 155);
+            $table->string('interval');
             $table->float('value');
             $table->timestamps();
         });
