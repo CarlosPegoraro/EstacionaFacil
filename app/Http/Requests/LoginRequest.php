@@ -26,7 +26,7 @@ class LoginRequest extends FormRequest
             'password' => ['required', 'min:8'],
         ];
 
-        if ($this->is('/login/create')) {
+        if ($this->is('/register')) {
             $rules['user'] = ['required', 'min:4'];
         }
 

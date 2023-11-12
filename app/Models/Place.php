@@ -9,13 +9,5 @@ class Place extends Model
 {
     use HasFactory;
 
-    /**
-         * $table->string('name', 155);
-         * $table->string('state', 50);
-         * $table->string('city', 50);
-         * $table->string('region', 50);
-         * $table->string('street', 155);
-         * $table->string('number', 50);
-         */
-    protected $fillable = ['name', 'address'];
+    protected $fillable = ['name', 'address', 'coordenates'];
 }

@@ -3,7 +3,7 @@
         <img src="{{ asset('assets/logo.svg') }}" alt="logo" height="100">
         <h1 class="fs-4 text-center text-bold main-font" style="color: 494949">Welcome Back</h1>
     </div>
-    <form action="{{ route('login.login') }}" method="post">
+    <form method="post">
         @csrf
         <div class="container d-flex flex-column gap-2 login-form-container">
             <label for="email">email</label>
@@ -14,7 +14,7 @@
             <button type="submit" class="btn btn-primary mb-3 text-light text-uppercase">entrar</button>
             <p style="color: #686868" class="d-flex justify-content-center align-center with-lines text-nowrap">ainda
                 não tem conta?</p>
-            <a href="{{ route('login.create') }}" class="link d-flex justify-content-center align-center">cadastre-se
+            <a href="{{ route('register') }}" class="link d-flex justify-content-center align-center">cadastre-se
                 agora</a>
         </div>
     </form>
