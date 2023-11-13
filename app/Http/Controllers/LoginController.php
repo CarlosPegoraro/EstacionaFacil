@@ -23,7 +23,7 @@ class LoginController extends Controller
           return redirect()->back()->withErrors(['Usuário ou senhas inválidos']);
         };
 
-        return to_route('home.index');
+        return to_route('lots.index');
     }
 
     public function destroy() {

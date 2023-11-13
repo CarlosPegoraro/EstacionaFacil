@@ -6,7 +6,7 @@
 
     <h1 class="fs-4 text-secondary fw-bold my-4 line">Comprar Vaga</h1>
 
-    <form action="{{ route('home.store') }}" method="post">
+    <form action="{{ route('lots.store') }}" method="post">
         @csrf
 
         <div class="row">
@@ -40,7 +40,16 @@
 
                 <div class="col-12">
 
-                    <label class="form-label" for="interval">Horário</label>
+                    <label class="form-label" for="time">Horário</label>
+
+                    <input type="time" class="form-control" id="time" name="time"
+                        placeholder="Que Horas?" required>
+
+                </div>
+
+                <div class="col-12">
+
+                    <label class="form-label" for="interval">Intervalo</label>
 
                     <input class="form-control" list="intervalList" id="interval" name="interval"
                         placeholder="Pra quanto tempo?" required>

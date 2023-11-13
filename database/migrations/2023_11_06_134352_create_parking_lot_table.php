@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('place', 155);
             $table->string('coordenates', 155);
             $table->string('interval');
+            $table->time('time');
             $table->float('value');
             $table->bigInteger('user_id');
             $table->timestamps();
