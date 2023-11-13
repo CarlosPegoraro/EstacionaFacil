@@ -26,5 +26,10 @@ class LoginController extends Controller
         return to_route('home.index');
     }
 
+    public function destroy() {
+        Auth::logout();
+        return view('login.index')->with('successMessage', null);
+    }
+
 
 }

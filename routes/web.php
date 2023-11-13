@@ -23,8 +23,9 @@ Route::get('/', function () {
 
 Route::resource('/home', HomeController::class)->middleware(Authenticator::class);
 
-Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::get('/login', [LoginController::class, 'index'])->name('login.index');
 Route::post('/login', [LoginController::class, 'store'])->name('login.store');
+Route::get('/login', [LoginController::class, 'destroy'])->name('login.destroy');
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store'])->name('register.store');

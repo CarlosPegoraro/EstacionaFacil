@@ -15,6 +15,18 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg nav-light bg-light">
+        <div class="container d-flex justify-content-between">
+            <a href="/home" class="nav-brand">
+                <img src="{{ asset('assets/logoSlim.png') }}" alt="">
+            </a>
+            @auth
+                <a class="text-muted" style="text-decoration: none" href="{{ route('login.destroy') }}">
+                    Sair
+                </a>
+            @endauth
+        </div>
+    </nav>
     <div class="container justify-content-center align-items-center flex-column p-5" style="max-height: 100vh;">
 
         @isset($successMessage)

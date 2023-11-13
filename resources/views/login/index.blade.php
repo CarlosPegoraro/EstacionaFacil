@@ -1,7 +1,7 @@
 <x-layout title="Login" :successMessage="$successMessage">
-    <div class="container-fluid d-flex justify-content-center align-center flex-column gap-5">
+    <div class="container-fluid d-flex justify-content-center align-center flex-column gap-4">
         <img src="{{ asset('assets/logo.svg') }}" alt="logo" height="100">
-        <h1 class="fs-4 text-center text-bold main-font" style="color: 494949">Welcome Back</h1>
+        <h1 class="fs-4 text-center text-bold main-font" style="color: 494949">Qual a sua próxima <span style="color: #ff8f00">Vaga?</h1>
     </div>
     <form method="post">
         @csrf
